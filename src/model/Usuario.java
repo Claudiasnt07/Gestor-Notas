@@ -9,4 +9,8 @@ public class Usuario {
         this.nombre = nombre;
         this.hashPassword = hashPassword;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
 }
