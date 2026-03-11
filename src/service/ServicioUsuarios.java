@@ -1,8 +1,8 @@
 package src.service;
 
-import persistence.RepositorioUsuarios;
+import src.persistence.RepositorioUsuarios;
 import src.persistence.RepositorioNotas;
-import utils.UtilHash;
+import src.utils.UtilHash;
 import java.util.Map;
 
 public class ServicioUsuarios {

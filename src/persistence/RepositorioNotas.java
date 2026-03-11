@@ -1,10 +1,10 @@
 package src.persistence;
 
-import model.Nota;
+import src.model.Nota;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.utils.*;
+import src.utils.*;
 
 public class RepositorioNotas {
     

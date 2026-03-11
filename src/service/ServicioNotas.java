@@ -1,7 +1,7 @@
 package src.service;
 
-import model.Nota;
-import persistence.RepositorioNotas;
+import src.model.Nota;
+import src.persistence.RepositorioNotas;
 import java.util.*;
 
 public class ServicioNotas {
