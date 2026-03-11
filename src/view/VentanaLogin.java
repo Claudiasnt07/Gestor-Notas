@@ -1,5 +1,10 @@
 package src.view;
 
-public class VentanaLogin {
+import javax.swing.*;
+
+public class VentanaLogin JFrame {
     
+    public JTextField usuario = new JTextField();
+    public JPasswordField password = new JPasswordField();
+
 }
