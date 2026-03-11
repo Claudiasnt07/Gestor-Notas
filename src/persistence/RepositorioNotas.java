@@ -22,5 +22,16 @@ public class RepositorioNotas {
 
         return notas;
     }
-    
+
+    public void guardarNotas(String usuario, List<Nota> notas) {
+        String archivo = "notas_" + usuario + ".txt";
+
+        try (PrintWriter pw = new PrintWriter(new FileWriter(archivo))) {
+            for (Nota n : notas) {
+                pw.println(n.getTitulo() + "|" + n.getContenido());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
