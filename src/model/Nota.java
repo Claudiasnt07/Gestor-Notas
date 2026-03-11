@@ -17,4 +17,12 @@ public class Nota {
     public String getContenido() {
         return contenido;
     }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public void setContenido(String contenido) {
+        this.contenido = contenido;
+    }
 }
