@@ -1,5 +1,9 @@
 package src.view;
 
-public class VentanaNotas {
+import javax.swing.*;
+
+public class VentanaNotas extends JFrame {
     
+    public DefaultListModel<String> modeloLista = new DefaultListModel<>();
+    public JList<String> lista = new JList<>(modeloLista);
 }
