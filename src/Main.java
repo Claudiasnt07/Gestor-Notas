@@ -8,6 +8,6 @@ public class Main {
     public static void main(String[] args) {
 
         VentanaLogin view = new VentanaLogin();
-        new GestorAutenticacion(view);
+        GestorAutenticacion auth = new GestorAutenticacion(view);
     }
 }
