@@ -32,4 +32,5 @@ public class VentanaLogin JFrame {
         add(botonRegistro);
 
         setVisible(true);
+    }
 }
