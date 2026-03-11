@@ -22,4 +22,28 @@ public class ServicioUsuarios {
 
         return true;
     }
+
+    public boolean login(String usuario, String password) {
+        Map<String, String> usuarios = repo.cargarUsuarios();
+
+        if (!usuarios.containsKey(usuario)) {
+            return false;
+        }
+
+        String hash = UtilHash.generarHash(password);
+
+        return usuarios.get(usuario).equals(hash);
+    }
+
+    public boolean login(String usuario, String password) {
+        Map<String, String> usuarios = repo.cargarUsuarios();
+
+        if (!usuarios.containsKey(usuario)) {
+            return false;
+        }
+
+        String hash = UtilHash.generarHash(password);
+
+        return usuarios.get(usuario).equals(hash);
+    }
 }
